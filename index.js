@@ -20,25 +20,25 @@ let operator = ''
 
 function operate(num1, num2, operator) {
 
-    if (operator = '+') {
-        add(Number(num1), Number(num2))
+    if (operator == '+') {
+        return add(Number(num1), Number(num2))
     }
 
-    if (operator = '-') {
-        subtract(Number(num1), Number(num2))
+    if (operator == '-') {
+        return subtract(Number(num1), Number(num2))
     }
 
-    if (operator = '*') {
-        multiply(Number(num1), Number(num2))
+    if (operator == '*') {
+        return multiply(Number(num1), Number(num2))
     }
 
-    if (operator = '/') {
-        divide(Number(num1), Number(num2))
+    if (operator == '/') {
+        return divide(Number(num1), Number(num2))
     }
 
 }
-
 const screenText = document.querySelector("p")
+let currentScreenText = screenText.textContent
 text = ''
 function changeScreen(text) {
     screenText.textContent = text
@@ -78,6 +78,19 @@ oneBut.addEventListener("click", () => {
 twoBut.addEventListener("click", () => {
     text += "2"
     changeScreen(text)
+    
+    currentScreenText = screenText.textContent
+    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
+        num2 = String(num2)
+        num2 += '2'
+        console.log("hi")
+    }
+    else {
+        num2 = String(num2)
+        num1 += '2'
+        console.log("bye")
+    }
+
 })
 threeBut.addEventListener("click", () => {
     text += "3"
@@ -130,12 +143,22 @@ plusBut.addEventListener("click", () => {
 
 equalsBut.addEventListener("click", () => {
     console.log("equals")
+
+    num1 = Number(num1)
+    num2 = Number(num2)
+    console.log(num1)
+    console.log(num2)
     text = operate(num1, num2, operator)
     changeScreen(text)
+
+    num1 = text
+    num2 = ''
 })
 
 clearBut.addEventListener("click", () => {
     console.log("clear")
+    num1 = ''
+    num2 = ''
     text = ''
     changeScreen(text)
 })
