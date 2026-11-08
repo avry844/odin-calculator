@@ -39,7 +39,7 @@ function operate(num1, num2, operator) {
 }
 
 const screenText = document.querySelector("p")
-
+text = ''
 function changeScreen(text) {
     screenText.textContent = text
 }
@@ -68,54 +68,75 @@ const clearBut = document.querySelector(".c")
 
 // number event listeners
 zeroBut.addEventListener("click", () => {
-    console.log("zero")
+    text += "0"
+    changeScreen(text)
 })
 oneBut.addEventListener("click", () => {
-    console.log("one")
+    text += "1"
+    changeScreen(text)
 })
 twoBut.addEventListener("click", () => {
-    console.log("two")
+    text += "2"
+    changeScreen(text)
 })
 threeBut.addEventListener("click", () => {
-    console.log("three")
+    text += "3"
+    changeScreen(text)
 })
 fourBut.addEventListener("click", () => {
-    console.log("four")
+    text += "4"
+    changeScreen(text)
 })
 fiveBut.addEventListener("click", () => {
-    console.log("five")
+    text += "5"
+    changeScreen(text)
 })
 sixBut.addEventListener("click", () => {
-    console.log("six")
+    text += "6"
+    changeScreen(text)
 })
 sevenBut.addEventListener("click", () => {
-    console.log("seven")
+    text += "7"
+    changeScreen(text)
 })
 eightBut.addEventListener("click", () => {
-    console.log("eight")
+    text += "8"
+    changeScreen(text)
 })
 nineBut.addEventListener("click", () => {
-    console.log("nine")
+    text += "9"
+    changeScreen(text)
 })
 
 // operator event listeners
 divideBut.addEventListener("click", () => {
-    console.log("divide")
+    text += " / "
+    changeScreen(text)
+
+    operator = '/'
 })
 timesBut.addEventListener("click", () => {
     console.log("times")
+    operator = '*'
 })
 minusBut.addEventListener("click", () => {
     console.log("minus")
+    operator = '-'
 })
 plusBut.addEventListener("click", () => {
     console.log("plus")
+    operator = '+'
 })
 
 equalsBut.addEventListener("click", () => {
     console.log("equals")
+    text = operate(num1, num2, operator)
+    changeScreen(text)
 })
 
 clearBut.addEventListener("click", () => {
     console.log("clear")
+    text = ''
+    changeScreen(text)
 })
+
