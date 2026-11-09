@@ -19,7 +19,8 @@ let num2 = ''
 let operator = ''
 
 function operate(num1, num2, operator) {
-
+    num1 = Number(num1)
+    num2 = Number(num2)
     if (operator == '+') {
         return add(Number(num1), Number(num2))
     }
@@ -37,6 +38,7 @@ function operate(num1, num2, operator) {
     }
 
 }
+
 const screenText = document.querySelector("p")
 let currentScreenText = screenText.textContent
 text = ''
@@ -105,14 +107,10 @@ twoBut.addEventListener("click", () => {
     
     currentScreenText = screenText.textContent
     if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
         num2 += '2'
-        console.log("hi")
     }
     else {
-        num2 = String(num2)
         num1 += '2'
-        console.log("bye")
     }
 
 })
@@ -237,15 +235,21 @@ divideBut.addEventListener("click", () => {
     operator = '/'
 })
 timesBut.addEventListener("click", () => {
-    console.log("times")
+    text += " * "
+    changeScreen(text)
+
     operator = '*'
 })
 minusBut.addEventListener("click", () => {
-    console.log("minus")
+    text += " - "
+    changeScreen(text)
+
     operator = '-'
 })
 plusBut.addEventListener("click", () => {
-    console.log("plus")
+    text += " + "
+    changeScreen(text)
+
     operator = '+'
 })
 
@@ -254,13 +258,12 @@ equalsBut.addEventListener("click", () => {
 
     num1 = Number(num1)
     num2 = Number(num2)
-    console.log(num1)
-    console.log(num2)
     text = operate(num1, num2, operator)
     changeScreen(text)
 
     num1 = text
     num2 = ''
+    operator = ''
 })
 
 clearBut.addEventListener("click", () => {
