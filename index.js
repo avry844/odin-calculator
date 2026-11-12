@@ -72,33 +72,25 @@ const clearBut = document.querySelector(".c")
 zeroBut.addEventListener("click", () => {
     text += "0"
     changeScreen(text)
-
+    
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
-        num2 += '0'
-        console.log("hi")
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '0'
     }
     else {
-        num2 = String(num2)
-        num1 += '0'
-        console.log("bye")
+        num1 = num1 + '0'
     }
 })
 oneBut.addEventListener("click", () => {
     text += "1"
     changeScreen(text)
-
+    
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
-        num2 += '1'
-        console.log("hi")
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '1'
     }
     else {
-        num2 = String(num2)
-        num1 += '1'
-        console.log("bye")
+        num1 = num1 + '1'
     }
 })
 twoBut.addEventListener("click", () => {
@@ -106,124 +98,96 @@ twoBut.addEventListener("click", () => {
     changeScreen(text)
     
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 += 2
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '2'
     }
     else {
-        num1 += 2
+        num1 = num1 + '2'
     }
 
 })
 threeBut.addEventListener("click", () => {
     text += "3"
     changeScreen(text)
-
+    
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
-        num2 += '3'
-        console.log("hi")
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '3'
     }
     else {
-        num2 = String(num2)
-        num1 += '3'
-        console.log("bye")
+        num1 = num1 + '3'
     }
 })
 fourBut.addEventListener("click", () => {
     text += "4"
     changeScreen(text)
-
+    
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
-        num2 += '4'
-        console.log("hi")
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '4'
     }
     else {
-        num2 = String(num2)
-        num1 += '4'
-        console.log("bye")
+        num1 = num1 + '4'
     }
 })
 fiveBut.addEventListener("click", () => {
     text += "5"
     changeScreen(text)
-
+    
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
-        num2 += '5'
-        console.log("hi")
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '5'
     }
     else {
-        num2 = String(num2)
-        num1 += '5'
-        console.log("bye")
+        num1 = num1 + '5'
     }
 })
 sixBut.addEventListener("click", () => {
     text += "6"
     changeScreen(text)
-
+    
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
-        num2 += '6'
-        console.log("hi")
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '6'
     }
     else {
-        num2 = String(num2)
-        num1 += '6'
-        console.log("bye")
+        num1 = num1 + '6'
     }
 })
 sevenBut.addEventListener("click", () => {
     text += "7"
     changeScreen(text)
-
+    
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
-        num2 += '7'
-        console.log("hi")
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '7'
     }
     else {
-        num2 = String(num2)
-        num1 += '7'
-        console.log("bye")
+        num1 = num1 + '7'
     }
 })
 eightBut.addEventListener("click", () => {
     text += "8"
     changeScreen(text)
-
+    
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
-        num2 += '8'
-        console.log("hi")
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '8'
     }
     else {
-        num2 = String(num2)
-        num1 += '8'
-        console.log("bye")
+        num1 = num1 + '8'
     }
 })
 nineBut.addEventListener("click", () => {
     text += "9"
     changeScreen(text)
-
+    
     currentScreenText = screenText.textContent
-    if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 = String(num2)
-        num2 += '9'
-        console.log("hi")
+    if (currentScreenText.includes("/") || currentScreenText.includes("*") || currentScreenText.includes("-") || currentScreenText.includes("+")) {
+        num2 = num2 + '9'
     }
     else {
-        num2 = String(num2)
-        num1 += '9'
-        console.log("bye")
+        num1 = num1 + '9'
     }
 })
 
@@ -254,10 +218,9 @@ plusBut.addEventListener("click", () => {
 })
 
 equalsBut.addEventListener("click", () => {
-    console.log("equals")
-
     num1 = Number(num1)
     num2 = Number(num2)
+
     text = operate(num1, num2, operator)
     changeScreen(text)
 
