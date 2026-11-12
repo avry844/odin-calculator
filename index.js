@@ -107,10 +107,10 @@ twoBut.addEventListener("click", () => {
     
     currentScreenText = screenText.textContent
     if (currentScreenText.includes("/" || "*" || "+" || "-")) {
-        num2 += '2'
+        num2 += 2
     }
     else {
-        num1 += '2'
+        num1 += 2
     }
 
 })
