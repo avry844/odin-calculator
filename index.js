@@ -222,6 +222,7 @@ equalsBut.addEventListener("click", () => {
     num2 = Number(num2)
 
     text = operate(num1, num2, operator)
+    text = Math.round(text * 100000) / 100000
     changeScreen(text)
 
     num1 = text
